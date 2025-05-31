@@ -2,6 +2,7 @@ import { Container } from "../shared/Container"
 import logo from "../../assets/logo.png"
 import { BtnLink } from "../shared/BtnLink";
 import { NavItem } from "../shared/NavItem";
+import { useThemeStore } from "../../store/Themestore";
 
 const NavItems = [
     {href: '#', label: 'Home'},
@@ -10,9 +11,9 @@ const NavItems = [
     {href: '/events', label: 'Events'},
     {href: '/bookings', label: 'Bookings'},
     {href: '/contact', label: 'Contact'},
-    {href: '/login', label: 'Login'},
-    {href: '/register', label: 'Register'},
-    {href: '/logout', label: 'Logout'},
+    // {href: '/login', label: 'Login'},
+    // {href: '/register', label: 'Register'},
+    // {href: '/logout', label: 'Logout'},
 ]
 
 export const Navbar = () => {
