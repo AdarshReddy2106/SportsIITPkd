@@ -1,6 +1,6 @@
 import { Layout } from './components/shared/Layout';
 import { Hero } from './components/sections/Hero';
-import { Brands } from './components/sections/Brands';
+import { Gallery } from './components/sections/Gallery';
 import { Services } from './components/sections/Services';
 import { AboutUs } from './components/sections/AboutUs';
 import { Facilities } from './components/sections/Facilities';
@@ -16,9 +16,9 @@ function App() {
       <Events />
       <Services />
       <AboutUs />
-      <Brands />
       <Booking />
       <Contact />
+      <Gallery />
     </Layout>
   );
 }

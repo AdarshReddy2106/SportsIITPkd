@@ -3,9 +3,9 @@ import { Title } from "../shared/Title";
 
 const logos = ["discord", "openai", "paypal", "slack", "spotify", "youtube"];
 
-export const Brands = () => {
+export const Gallery = () => {
   return (
-    <section>
+    <section id="gallery">
       {" "}
       <Container className="space-y-8">
         <div className="text-center max-w-3xl mx-auto">
