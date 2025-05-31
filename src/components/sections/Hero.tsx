@@ -30,19 +30,18 @@ import { Link } from 'react-router-dom';
           Join our elite sports community and unleash your potential.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-8">
-          <Link
-            to="/booking"
+          <a href= "#booking"
+            
             className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg"
             style={{ boxShadow: "0 0 24px 6px #d946ef55" }}
           >
             Book Facilities
-          </Link>
-          <Link
-            to="/events"
+          </a>
+          <a href="#events"
             className="px-6 py-3 rounded-full border border-white text-white font-semibold bg-transparent hover:bg-white hover:text-black transition"
           >
             Join Events
-          </Link>
+          </a>
         </div>
         <div className="flex gap-12 mt-12 justify-center">
           <div>
