@@ -10,11 +10,10 @@ export const Services = () => {
       {" "}
       <Container className="space-y-10 md:space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <Title> Our Services</Title>
+          <Title>Elite Sports Experience</Title>
           <Paragraph>
-            We offer a wide range of sports and fitness services to cater to all
-            your athletic needs. From professional coaching to state-of-the-art
-            facilities, we have everything you need to excel in your sport.
+            Discover world-class facilities and programs designed to elevate your
+            athletic journey.
           </Paragraph>
         </div>
 

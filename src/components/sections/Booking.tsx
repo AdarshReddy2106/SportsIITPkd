@@ -2,7 +2,7 @@ import { Container } from "../shared/Container";
 import { Title } from "../shared/Title";
 
 export const Booking = () => (
-  <section>
+  <section id="booking">
     <Container>
       <div className="text-center mb-8">
         <Title>Book Your Session</Title>

@@ -1,87 +1,62 @@
 // Main driver to the Website
 import { Container } from "../shared/Container";
-import { Paragraph } from "../shared/Paragraph"
-import { Button } from "../shared/Button";
 import { Numbers } from "./Numbers";
+import { Link } from 'react-router-dom';
 
 
  export const Hero = () => {
   return (
-    <section className="relative pt-32 lg:pt-36">
-      {" "}
-      <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
-        <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
-          <span
-            className="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 
-                        skew-x-12 rounded-3xl bg-gradient-to-r from-blue-600 to-violet-600
-                        blur-xl opacity-60 lg:opacity-95 lg:block hidden"
-          ></span>
-          <span className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-primary blur-xl opacity-80"></span>
+    <section
+      className="relative min-h-[80vh] flex items-center justify-center pt-24 pb-16"
+      style={{
+        backgroundImage:
+          "url('https://images.pexels.com/photos/7773731/pexels-photo-7773731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-black/60" />
+      <Container className="relative z-10 flex flex-col items-center text-center">
+        <h1 className="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight">
+          Together We
+          <br />
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-[0_2px_16px_rgba(236,72,153,0.7)] text-5xl sm:text-6xl md:text-7xl mt-2 mb-2">
+            Conquer
+          </span>
+          Together We Compete
+        </h1>
+        <p className="mt-6 text-lg text-gray-200 max-w-2xl">
+          Experience world-class sports facilities and training programs at IIT Palakkad.
+          Join our elite sports community and unleash your potential.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 mt-8">
+          <Link
+            to="/booking"
+            className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg"
+            style={{ boxShadow: "0 0 24px 6px #d946ef55" }}
+          >
+            Book Facilities
+          </Link>
+          <Link
+            to="/events"
+            className="px-6 py-3 rounded-full border border-white text-white font-semibold bg-transparent hover:bg-white hover:text-black transition"
+          >
+            Join Events
+          </Link>
         </div>
-
-        <div
-          className="relative flex flex-col items-center text-center lg:text-left lg:py-8 lg:items-start
-                        lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2"
-        >
-          <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold">
-            Welcome to 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600 ml-2">
-              Sports IITPalakkad{" "}
-            </span>
-          </h1>
-          
-          <Paragraph>
-            Your one-stop destination for all things sports at IIT Palakkad. 
-            Join us to explore, participate, and excel in a variety of sports activities.
-          </Paragraph>
-          <div className="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
-            <div className="flex sm:flex-row flex-col gap-5 w-full">
-              <form
-                action="#"
-                className="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-heading-3
-                                          shadow-lg shadow-box-shadow border border-box-border
-                                          bg-box-bg rounded-full ease-linear focus-within:bg-body
-                                          focus-within:border-primary"
-              >
-                <span className="min-w-max pr-2 border-r border-box-border">
-                  {" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"
-                    />
-                  </svg>
-                </span>
-                <input
-                  type="email"
-                  placeholder=".....@gmail.com"
-                  className="w-full py-3 outline-none bg-transparent"
-                />
-                <Button className="min-w-max text-white">
-                  <span className="relative z-[5]">Get Started</span>
-                </Button>
-              </form>
-            </div>
+        <div className="flex gap-12 mt-12 justify-center">
+          <div>
+            <div className="text-2xl sm:text-3xl font-bold text-pink-400">15+</div>
+            <div className="text-white text-sm mt-1">SPORTS FACILITIES</div>
           </div>
-        </div>
-
-        <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-non lg:mx-0 mx-auto max-w-3xl">
-          <img
-            src="https://images.pexels.com/photos/7773731/pexels-photo-7773731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Hero image"
-            width={2350}
-            height={2359}
-            className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-non max-h-96"
-          />
+          <div>
+            <div className="text-2xl sm:text-3xl font-bold text-cyan-400">500+</div>
+            <div className="text-white text-sm mt-1">ACTIVE ATHLETES</div>
+          </div>
+          <div>
+            <div className="text-2xl sm:text-3xl font-bold text-pink-400">24/7</div>
+            <div className="text-white text-sm mt-1">ACCESS AVAILABLE</div>
+          </div>
         </div>
       </Container>
       <Numbers />

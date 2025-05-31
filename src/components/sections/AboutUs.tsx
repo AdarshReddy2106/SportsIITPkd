@@ -5,7 +5,7 @@ import { Title } from "../shared/Title";
 
 export const AboutUs = () => {
   return (
-    <section id="about-us">
+    <section id="about">
       {" "}
       <Container className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center">
         <div className="w-full md:w-5/12 lg:w-1/2">

@@ -2,7 +2,7 @@ import { Container } from "../shared/Container";
 import { Title } from "../shared/Title";
 
 export const Contact = () => (
-  <section>
+  <section id="contact">
     <Container>
       <div className="text-center mb-8">
         <Title>Get In Touch</Title>
