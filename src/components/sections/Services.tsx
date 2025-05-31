@@ -10,10 +10,11 @@ export const Services = () => {
       {" "}
       <Container className="space-y-10 md:space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <Title> Our AI Services</Title>
+          <Title> Our Services</Title>
           <Paragraph>
-            Unlock the potential of advanced machine learning, natural language
-            processing, and predictive analytics. Our services include:
+            We offer a wide range of sports and fitness services to cater to all
+            your athletic needs. From professional coaching to state-of-the-art
+            facilities, we have everything you need to excel in your sport.
           </Paragraph>
         </div>
 
