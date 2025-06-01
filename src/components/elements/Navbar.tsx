@@ -4,17 +4,17 @@ import logo from "../../assets/logo.png"
 import { useThemeStore } from "../../store/Themestore";
 import { Link } from 'react-router-dom';
 
-// const NavItems = [
-//     {href: '#', label: 'Home'},
-//     {href: '/about', label: 'About'},
-//     {href: '/gallery', label: 'Gallery'},
-//     {href: '/events', label: 'Events'},
-//     {href: '/bookings', label: 'Bookings'},
-//     {href: '/contact', label: 'Contact'},
-//     // {href: '/login', label: 'Login'},
-//     // {href: '/register', label: 'Register'},
-//     // {href: '/logout', label: 'Logout'},
-// ]
+export const NavItems = [
+    {href: '#', label: 'Home'},
+    {href: '/about', label: 'About'},
+    {href: '/gallery', label: 'Gallery'},
+    {href: '/events', label: 'Events'},
+    {href: '/bookings', label: 'Bookings'},
+    {href: '/contact', label: 'Contact'},
+    // {href: '/login', label: 'Login'},
+    // {href: '/register', label: 'Register'},
+    // {href: '/logout', label: 'Logout'},
+]
 
 export const Navbar = () => {
   const { toggleTheme, theme } = useThemeStore();
@@ -31,6 +31,7 @@ export const Navbar = () => {
           </a>
           {/* Nav Links */}
           <ul className="flex gap-8 text-base font-medium">
+            <li><a href="/">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#events">Events</a></li>

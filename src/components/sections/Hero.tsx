@@ -2,15 +2,14 @@
 import { Container } from "../shared/Container";
 import { Numbers } from "./Numbers";
 import { Link } from 'react-router-dom';
-
+import backgroundImage from "../../assets/background.png"; // Adjust the path as necessary
 
  export const Hero = () => {
   return (
     <section
       className="relative min-h-[80vh] flex items-center justify-center pt-24 pb-16"
       style={{
-        backgroundImage:
-          "url('https://images.pexels.com/photos/7773731/pexels-photo-7773731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+        backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
