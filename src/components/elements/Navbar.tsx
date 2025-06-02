@@ -3,6 +3,8 @@ import logo from "../../assets/logo.png"
 
 import { useThemeStore } from "../../store/Themestore";
 import { Link } from 'react-router-dom';
+import { useState } from "react";
+
 
 export const NavItems = [
     {href: '#', label: 'Home'},
@@ -18,6 +20,7 @@ export const NavItems = [
 
 export const Navbar = () => {
   const { toggleTheme, theme } = useThemeStore();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="bg-black text-white fixed inset-x-0 top-0 z-50 py-3 shadow">
@@ -29,17 +32,29 @@ export const Navbar = () => {
             <span>Sports IITPKD</span>
             <span className="text-orange-400 text-xl ml-1">⚡</span>
           </a>
+          {/* Hamburger for mobile */}
+          <button
+            className="md:hidden flex flex-col justify-center items-center w-10 h-10"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={`block h-0.5 w-6 bg-white mb-1 transition-all ${menuOpen ? "rotate-45 translate-y-2" : ""}`}></span>
+            <span className={`block h-0.5 w-6 bg-white mb-1 transition-all ${menuOpen ? "opacity-0" : ""}`}></span>
+            <span className={`block h-0.5 w-6 bg-white transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
+          </button>
           {/* Nav Links */}
-          <ul className="flex gap-8 text-base font-medium">
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#booking">Booking</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul className={`flex-col md:flex-row flex gap-6 md:gap-8 text-base font-medium fixed md:static top-16 left-0 w-full md:w-auto bg-black md:bg-transparent z-40 transition-all duration-300 ${menuOpen ? "flex" : "hidden md:flex"}`}>
+            <li><Link to="/" className="block px-4 py-3 md:p-0">Home</Link></li>
+            <li><Link to="/about" className="block px-4 py-3 md:p-0">About</Link></li>
+            <li><Link to="/gallery" className="block px-4 py-3 md:p-0">Gallery</Link></li>
+            <li><Link to="/events" className="block px-4 py-3 md:p-0">Events</Link></li>
+            <li><Link to="/bookings" className="block px-4 py-3 md:p-0">Booking</Link></li>
+            <li><Link to="/contact" className="block px-4 py-3 md:p-0">Contact</Link></li>
+            <li className="md:hidden"><Link to="/signin" className="block px-4 py-3">Sign In</Link></li>
+            <li className="md:hidden"><Link to="/signup" className="block px-4 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full text-center">Sign Up</Link></li>
           </ul>
           {/* Right Side */}
-          <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3">
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full border border-box-border text-heading-2"

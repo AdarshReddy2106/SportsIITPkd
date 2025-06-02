@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import { Layout } from './components/shared/Layout';
 import { Hero } from './components/sections/Hero';
 import { Gallery } from './components/sections/Gallery';
@@ -11,14 +12,25 @@ import { Contact } from './components/sections/Contact';
 function App() {
   return (
     <Layout title="Sports IITPkd">
-      <Hero />
-      <Facilities />
-      <Events />
-      <Services />
-      <AboutUs />
-      <Booking />
-      <Contact />
-      <Gallery />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Hero />
+            <Facilities />
+            <Events />
+            <Services />
+            <AboutUs />
+            <Booking />
+            <Contact />
+            <Gallery />
+          </>
+        } />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/bookings" element={<Booking />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </Layout>
   );
 }

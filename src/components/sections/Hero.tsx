@@ -57,7 +57,6 @@ import backgroundImage from "../../assets/background.png"; // Adjust the path as
           </div>
         </div>
       </Container>
-      <Numbers />
     </section>
   );
 };
