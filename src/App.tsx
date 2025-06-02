@@ -16,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
+            <div className="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
               <Hero />
               <Facilities />
               <Events />
@@ -24,6 +25,8 @@ function App() {
               <Booking />
               <Contact />
               <Gallery />
+            </div>
+              
             </>
           } />
           <Route path="/about" element={<AboutUs />} />
