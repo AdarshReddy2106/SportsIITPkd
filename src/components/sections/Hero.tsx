@@ -1,18 +1,15 @@
 // Main driver to the Website
 import { Container } from "../shared/Container";
 import backgroundImage from "../../assets/background.png"; // Adjust the path as necessary
+import "../../index.css";
 
  export const Hero = () => {
-  return (
+    return (
     <section
-      className="relative min-h-[80vh] flex items-center justify-center pt-24 pb-16"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="hero-section relative min-h-[80vh] flex items-center justify-center pt-0 pb-16 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="absolute inset-0 bg-black/60" />
+    <div className="absolute inset-0 bg-black/60" />
       <Container className="relative z-10 flex flex-col items-center text-center">
         <h1 className="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight">
           Together We

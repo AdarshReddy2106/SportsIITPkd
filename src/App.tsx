@@ -12,25 +12,27 @@ import { Contact } from './components/sections/Contact';
 function App() {
   return (
     <Layout title="Sports IITPkd">
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <Facilities />
-            <Events />
-            <Services />
-            <AboutUs />
-            <Booking />
-            <Contact />
-            <Gallery />
-          </>
-        } />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/bookings" element={<Booking />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Facilities />
+              <Events />
+              <Services />
+              <AboutUs />
+              <Booking />
+              <Contact />
+              <Gallery />
+            </>
+          } />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/bookings" element={<Booking />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </Layout>
   );
 }
