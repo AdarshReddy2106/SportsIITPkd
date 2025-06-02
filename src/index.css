@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  /* fallback color if image fails */
+  background-color: #222;
+}
+
+.hero-book-btn {
+  box-shadow: 0 0 24px 6px #d946ef55;
+}
+
 :root {
   --color-bg: 255 255 255;
   --color-box: 255 255 255;
