@@ -12,7 +12,7 @@ import { Contact } from './components/sections/Contact';
 function App() {
   return (
     <Layout title="Sports IITPkd">
-      <div>
+      <div className="pt-6">
         <Routes>
           <Route path="/" element={
             <>
