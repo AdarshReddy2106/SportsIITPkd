@@ -28,14 +28,14 @@ const stats = [
 
 export const AboutUs = () => {
 	return (
-		<section id="about" className="bg-white dark:bg-gray-800 py-0">
+		<section id="about" className="bg-white dark:bg-gray-900 py-0">
 			<Container className="flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-16 items-center">
 				{/* Left: Text and Stats */}
 				<div className="w-full md:w-7/12 lg:w-1/2 flex flex-col justify-center">
-					<div className="text-3xl sm:text-4xl font-bold mb-4 text-white">
+					<div className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
 						<Title>About Sports IITPKD</Title>
 					</div>
-					<Paragraph className="text-base sm:text-lg mb-6 sm:mb-8 text-gray-200">
+					<Paragraph className="text-base sm:text-lg mb-6 sm:mb-8 text-gray-700 dark:text-gray-300">
 						At IIT Palakkad Sports Council, we believe in fostering excellence
 						through sports. Our mission is to provide world-class facilities and
 						opportunities for students to excel in their chosen sports while
@@ -45,14 +45,14 @@ export const AboutUs = () => {
 						{stats.map((stat) => (
 							<div
 								key={stat.label}
-								className="bg-[#18181e] rounded-xl p-4 sm:p-6 flex flex-col items-center shadow-md border border-[#23232b] w-full"
+								className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-6 flex flex-col items-center shadow-md border border-gray-200 dark:border-gray-700 w-full"
 							>
 								<span
 									className={`text-2xl sm:text-3xl font-bold ${stat.color}`}
 								>
 									{stat.value}
 								</span>
-								<span className="text-gray-300 mt-2 text-sm sm:text-base text-center">
+								<span className="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-base text-center">
 									{stat.label}
 								</span>
 							</div>
