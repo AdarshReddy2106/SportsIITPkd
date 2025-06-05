@@ -10,8 +10,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="pt-16 flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
-        {/* Removed the h1 that was causing the gap */}
+      <main className="pt-0 flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
         {children}
       </main>
       <Footer />

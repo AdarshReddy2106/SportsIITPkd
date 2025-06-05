@@ -2,7 +2,7 @@ import { Container } from "../shared/Container";
 import { Title } from "../shared/Title";
 
 export const Contact = () => (
-  <section id="contact" className="bg-gradient-to-b from-transparent to-slate-900/10 dark:to-slate-900/50">
+  <section id="contact" className="bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700">
     <Container>
       <div className="text-center mb-8">
         <Title>Get In Touch</Title>
@@ -30,7 +30,7 @@ export const Contact = () => (
             className="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-transparent dark:bg-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none min-h-[120px]" 
             placeholder="Message" 
           />
-          <button className="py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-purple-500/25">
+          <button className="py-3 rounded-full bg-gradient-to-r from-pink-400 to-purple-400 text-white font-semibold hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-purple-500/25">
             Send Message
           </button>
         </form>

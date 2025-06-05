@@ -24,7 +24,7 @@ export const Navbar = () => {
   }, [location]);
 
   return (
-    <header className="bg-black text-white fixed inset-x-0 top-0 z-50 py-3 shadow">
+    <header className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow">
       <Container>
         <nav className="flex items-center justify-between">
           {/* Logo */}

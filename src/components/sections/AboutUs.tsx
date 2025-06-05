@@ -28,7 +28,7 @@ const stats = [
 
 export const AboutUs = () => {
 	return (
-		<section id="about" className="py-0">
+		<section id="about" className="bg-white dark:bg-gray-800 py-0">
 			<Container className="flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-16 items-center">
 				{/* Left: Text and Stats */}
 				<div className="w-full md:w-7/12 lg:w-1/2 flex flex-col justify-center">

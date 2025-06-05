@@ -12,19 +12,19 @@ import { Contact } from './components/sections/Contact';
 function App() {
   return (
     <Layout title="Sports IITPkd">
-      <div className="pt-6">
+      <div className="pt-0">
         <Routes>
           <Route path="/" element={
             <>
             <div className="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
               <Hero />
               <Facilities />
-              <Events />
+              {/* <Events /> */}
               <Services />
               <AboutUs />
-              <Booking />
-              <Contact />
-              <Gallery />
+              {/* <Booking /> */}
+              {/* <Contact /> */}
+              {/* <Gallery />  */}
             </div>
               
             </>
