@@ -8,10 +8,9 @@ import { Facilities } from './components/sections/Facilities';
 import { Events } from './components/sections/Events';
 import { Booking } from './components/sections/Booking';
 import { Contact } from './components/sections/Contact';
-import { ThemeProvider } from "./components/sections/ThemeProvider";
 
 function App() {
-  return (<ThemeProvider>
+  return (
     <Layout title="Sports IITPkd">
       <div className="min-h-screen flex flex-col ">
         <div className="pt-0">
@@ -23,7 +22,7 @@ function App() {
                 <Facilities />
                 {/* <Events /> */}
                 <Services />
-                <AboutUs />
+                {/* <AboutUs /> */}
                 {/* <Booking /> */}
                 {/* <Contact /> */}
                 {/* <Gallery />  */}
@@ -40,7 +39,6 @@ function App() {
         </div>
       </div>
     </Layout>
-    </ThemeProvider>
   );
 }
 
