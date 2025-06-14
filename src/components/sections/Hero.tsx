@@ -28,14 +28,14 @@ export const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-8">
           <a
-            href="#booking"
+            href="/bookings"
             className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg"
             style={{ boxShadow: "0 0 24px 6px #d946ef55" }}
           >
             Book Facilities
           </a>
           <a
-            href="#events"
+            href="/events"
             className="px-6 py-3 rounded-full border border-white text-white font-semibold bg-transparent hover:bg-white hover:text-black transition"
           >
             Join Events

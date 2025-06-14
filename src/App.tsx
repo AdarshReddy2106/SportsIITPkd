@@ -8,11 +8,12 @@ import { Facilities } from './components/sections/Facilities';
 import { Events } from './components/sections/Events';
 import { Booking } from './components/sections/Booking';
 import { Contact } from './components/sections/Contact';
+import { ThemeProvider } from "./components/sections/ThemeProvider";
 
 function App() {
-  return (
+  return (<ThemeProvider>
     <Layout title="Sports IITPkd">
-      <div className="min-h-screen flex flex-col pb-[200px]">
+      <div className="min-h-screen flex flex-col ">
         <div className="pt-0">
           <Routes>
             <Route path="/" element={
@@ -39,6 +40,7 @@ function App() {
         </div>
       </div>
     </Layout>
+    </ThemeProvider>
   );
 }
 
